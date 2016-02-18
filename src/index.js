@@ -10,9 +10,9 @@ function g(x) {
 	return x*x;
 }
 
-function compose(f, g) {
+function compose(fn, gn) {
 	return function(x) {
-		return f(g(x));
+		return fn(gn(x));
 	}
 }
 
